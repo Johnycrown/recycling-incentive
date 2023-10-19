@@ -3,9 +3,11 @@ package com.payment.remittance.config;
 import jakarta.validation.constraints.NotBlank;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.context.properties.ConfigurationProperties;
+import org.springframework.context.annotation.Bean;
 import org.springframework.core.env.Environment;
 import org.springframework.stereotype.Component;
 import org.springframework.validation.annotation.Validated;
+import org.springframework.web.client.RestTemplate;
 
 @Component
 @Validated
@@ -16,6 +18,12 @@ public class PaymentAppConfig {
     private String jwtToken;
     @Autowired
     private Environment environment;
+
+    @Bean
+    public RestTemplate createTemplate(){
+
+        return  new RestTemplate();
+    }
 
     public String getName() {
         return name;

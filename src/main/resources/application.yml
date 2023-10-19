@@ -41,3 +41,9 @@ spring:
 configs:
     name: testing
     jwtToken: wasuinh
+Ceio:
+  url : https://cex.io/api/last_price/BTC/USD
+crypto:
+  url: https://rest.cryptoapis.io/wallet-as-a-service/wallets/
+  walletId:  652c349d13537a000788abec
+  apikey: 68eb6ad8f2baeded3700ff7e335792099caa767f

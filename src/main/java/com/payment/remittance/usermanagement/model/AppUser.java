@@ -14,4 +14,8 @@ public class AppUser {
     private Long id;
     private String email;
     private String password;
+    private String state;
+    private String country;
+    private String city;
+    private String residentialAddress;
 }
